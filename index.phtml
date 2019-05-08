@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Tugas Sister Yuliana</title>
+    </head>
+    <body>
+        <ul>
+        <?php foreach ($files as $file) { ?>
+            <li><?php echo $file; ?></li>
+        <?php } ?>
+        </ul>
+        <h1>Silakan Upload file </h1>
+        <form method="post" action="<?php echo $url; ?>">
+            <input type="file" name="filemu">
+            <input type="submit" value="SUBMIT" name="submit">
+        </form>
+
+   
+    </body>
+</html>
